@@ -1,0 +1,255 @@
+/* css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* css variable */
+:root{
+    --navbar-height: 59px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* Navigaton bar */
+#navbar{
+    display: flex;
+    background-color: #000000;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    position: sticky;
+}
+
+#navbar::before{
+   content: "";
+   background-color: rgb(0, 0, 0);
+   opacity: 0.4;
+   Z-index: -9;
+   width: 100%;
+   max-height: 100%;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+
+/* Navigation bar logo and Image */
+#logo{
+    margin: 0px 33px;
+}
+
+#logo img{
+    height: 90px;
+    cursor: pointer;
+    margin: 0px 6px;
+}
+
+/* Navigation bar List styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li{
+    list-style-type: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a{
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 25px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+#navbar ul li a:hover{
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Home section  */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 970px;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(../vegi.png)no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    Z-index: -1;
+    opacity: 0.89;
+    top: 80px;
+   left: 0px;
+}
+
+#home h1{
+    color: rgb(3, 3, 3);
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Bree Serif', serif;
+    
+}
+
+/* services container */
+#Services{
+    margin: 34px;
+    display: flex;
+    
+
+}
+#Services .box{
+    border: 2px solid #00f1f1;
+    padding: 8px;
+    margin: 30px 25px;
+    border-radius: 20px;
+    background: rgb(240, 236, 236);
+}
+
+#Services .box img{
+    height: 160px;
+    border-radius: 12px;
+    margin: auto;
+    display: block;
+}
+
+#Services.box p{
+    font-family: 'Bree Serif', serif;
+} 
+
+/* CLients section */
+
+#client-section{
+    /* height: 344px; */
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../cart.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#clients img{
+    height: 100px;
+
+}
+
+.client-item{
+    padding: 34px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../contact.jpg) no-repeat center center/cover;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1%;
+    opacity: 0.7;
+    background: url('../contact.jpg')no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+
+
+/* utility classes */
+.h-primary{
+    font-size: 3,8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+/* h-primary */
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding:  6px 10px ;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.center{
+    text-align: center;
+}
